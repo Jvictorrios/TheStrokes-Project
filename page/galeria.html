@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    
+    <!-- Importando a fonte Jersey 10 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/tela.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/galeria.css"> <!-- Link para o CSS -->
+    
+    <style>
+        /* Aplicando a fonte Jersey 10 */
+        body {
+            font-family: 'Jersey 10', sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Jersey 10', sans-serif;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #d3d3d3;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery img {
+            margin: 10px;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="members.html">Membros da Banda</a>
+        <a href="musical.html">Estilo Musical</a>
+        <a class="active" href="#">Galeria</a>
+    </div>
+    
+    <div class="gallery">
+        <img alt="Band members sitting together" src="https://i.pinimg.com/564x/3b/5d/4a/3b5d4a94b1336359eb398eac259a06d7.jpg"/>
+        <img alt="Drummer performing" src="https://i.pinimg.com/originals/93/fb/ba/93fbbadffc576e5f0e4da4c3a05966a6.jpg"/>
+        <img alt="Band member smoking" src="https://i.pinimg.com/564x/e3/07/19/e30719eb4dcb305987e14b34ac3e5a1c.jpg"/>
+        <img alt="Singer performing on stage" src="https://i.pinimg.com/564x/6f/58/a9/6f58a9d3046a7d0725fe9110bb5103dc.jpg"/>
+        <img alt="Guitarist performing" src="https://i.pinimg.com/564x/9a/71/57/9a71573baa20c2a9bdd36a5a67513d3d.jpg"/>
+        <img alt="Band members performing on stage" src="https://i.pinimg.com/564x/f4/9c/8a/f49c8a0f88873f5cd58a8b3384e33e6a.jpg"/>
+        <img alt="Band members talking in a room" src="https://i.pinimg.com/564x/91/5d/f6/915df6ab5924c90e08924ae9034f8a33.jpg"/>
+        <img alt="Band members talking outside" src="https://i.pinimg.com/564x/e9/5a/13/e95a133ee0c25649ea76c9a816a13a55.jpg"/>
+    </div>
+    
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/thestrokes/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/thestrokes"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thestrokes/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    <script>
+        function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    }
+    
+    </script>
+
+</body>
+</html>

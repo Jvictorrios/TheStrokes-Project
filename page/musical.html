@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Style</title>
+
+    <!-- Adicionando as fontes necessárias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/musical.css">
+    <link rel="stylesheet" href="/css/tela.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"/>
+    
+    <style>
+        /* Estilo para o player do Spotify */
+        .spotify-player {
+            margin-top: 20px; /* Espaçamento acima do player */
+            text-align: center; /* Centraliza o player */
+        }
+        
+        p {
+            font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+            line-height: 1.6; /* Altura da linha para legibilidade */
+            margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+        }
+
+        
+
+        /* Nova classe para Jersey 10 */
+        .jersey-10-regular {
+            font-family: "Jersey 10", sans-serif; /* Aplicando a fonte Jersey 10 */
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="members.html">Membros da Banda</a>
+        <a class="active" href="musical.html">Estilo Musical</a>
+        <a href="galeria.html">Galeria</a>
+    </div>
+    <div class="content">
+        <div class="text-content">
+            <h1 class="jersey-10-regular">Sons</h1> <!-- Aplicando a nova classe aqui -->
+            <p>
+                The Strokes é uma banda de rock americana formada em Nova York em 1998, reconhecida por seu impacto significativo no revival do garage rock e do rock alternativo dos anos 2000. O estilo musical da banda é caracterizado por uma fusão de várias influências:
+            </p>
+            <p>
+                <strong>Garage Rock:</strong>
+                O garage rock é um dos principais estilos associados ao som dos Strokes. O gênero se distingue por sua energia crua e guitarras distorcidas, com melodias simples, mas cativantes, que se tornaram a assinatura da banda.
+            </p>
+            <p>
+                <strong>Post-Punk:</strong>
+                Elementos do post-punk também estão presentes nas músicas dos Strokes, que incorporam ritmos dançantes e letras introspectivas. O som da banda combina a urgência do punk com uma abordagem mais atmosférica e experimental, refletindo influências de grupos como The Velvet Underground e Television.
+            </p>
+            <p>
+                <strong>New Wave:</strong>
+                As influências do new wave são perceptíveis em algumas faixas da banda, que apresentam sintetizadores e um toque mais pop. Isso se torna evidente em álbuns posteriores, como "First Impressions of Earth".
+            </p>
+            <p>
+                <strong>Conclusão:</strong>
+                O estilo musical de The Strokes é uma fusão de garage rock, post-punk e influências pop, marcado por melodias cativantes e letras reflexivas. A banda continua a ser uma influência significativa no cenário do rock moderno, com um legado duradouro que perdura ao longo dos anos.
+            </p>
+        </div>
+        <div class="image-content">
+            <img alt="Álbuns" src="https://i.pinimg.com/originals/18/76/9d/18769d7ccbdcbd784cf96422e3721aa2.jpg" />
+        </div>
+    </div>
+
+    <!-- Embed do Spotify -->
+    <div class="spotify-player">
+        <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator&theme=0" 
+                width="30%" height="152" frameborder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/thestrokes/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/thestrokes"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thestrokes/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    <script>
+        function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    }
+    
+    </script>
+
+</body>
+</html>

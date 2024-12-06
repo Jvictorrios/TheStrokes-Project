@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Member</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Adicionando as fontes necessárias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/tela.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="/css/members.css"> <!-- Vincular o CSS aqui -->
+    <style>
+        /* Estilo para o player do Spotify */
+        .spotify-player {
+            margin-top: 20px; /* Espaçamento acima do player */
+            text-align: center; /* Centraliza o player */
+        }
+        
+        /* Aplicando as fontes */
+        body {
+            font-family: 'Roboto', sans-serif; /* Fonte padrão */
+            background-color: #1C1C1C; /* Cor de fundo */
+            color: white; /* Cor do texto */
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Fonte para os títulos */
+            font-size: 2.5em; /* Tamanho da fonte do título */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+
+        /* Nova classe para Jersey 10 */
+        .jersey-10-regular {
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 20px; /* Tamanho da fonte dos parágrafos */
+            line-height: 1.6; /* Altura da linha para legibilidade */
+            margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+        }
+
+        /* Estilo para a navbar */
+        .navbar {
+            background-color: #333; /* Cor de fundo da navbar */
+            padding: 10px; /* Espaçamento da navbar */
+            text-align: center; /* Centraliza o texto da navbar */
+        }
+
+        .navbar a {
+            color: white; /* Cor dos links da navbar */
+            text-decoration: none; /* Remove sublinhado */
+            margin: 0 15px; /* Espaçamento entre os links */
+            transition: color 0.3s; /* Transição suave */
+        }
+
+        .navbar a:hover {
+            color: #d3d3d3; /* Cor ao passar o mouse */
+        }
+
+        /* Estilo para o rodapé */
+        .footer {
+            text-align: center; /* Centraliza o conteúdo do rodapé */
+            margin-top: 20px; /* Espaçamento acima do rodapé */
+        }
+
+        .social-icons a {
+            color: white; /* Cor dos ícones sociais */
+            margin: 0 10px; /* Espaçamento entre os ícones */
+        }
+
+        .social-icons a:hover {
+            color: #d3d3d3; /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a class="active" href="members.html">Membros da Banda</a>
+        <a href="musical.html">Estilo Musical</a>
+        <a href="galeria.html">Galeria</a>
+    </div>
+    <div class="content">
+        <div class="text-content">
+            <h1 class="jersey-10-regular">Membros</h1> <!-- Aplicando a nova classe aqui -->
+            <p>
+                The Strokes é uma banda de rock americana formada em Nova York em 1998, composta por cinco membros: Julian Casablancas, Nick Valensi, Albert Hammond Jr., Nikolai Fraiture e Fabrizio Moretti. Cada membro desempenha um papel fundamental na formação do som distintivo da banda.
+            </p>
+            <p>
+                Julian Casablancas (nascido em 23 de agosto de 1978) é o vocalista principal e principal compositor do grupo. Conhecido por sua voz rouca e estilo único, suas letras introspectivas frequentemente abordam temas de alienação e desilusão. Além de seu trabalho com The Strokes, Casablancas lançou projetos solo, incluindo Julian Casablancas + The Voidz, que exploram novos sons e estilos musicais.
+            </p>
+            <p>
+                Juntos, esses cinco membros formam o núcleo criativo dos The Strokes, contribuindo para a revitalização do rock nos anos 2000 e deixando uma marca indelével na cena musical contemporânea.
+            </p>
+        </div>
+        <div class="image-content">
+            <img alt="Membros." height="600" src="https://i.pinimg.com/originals/80/08/66/8008669e3738b21eb685a7e4a0b17cc6.jpg" width="400"/>
+        </div>
+    </div>
+
+    <!-- Embed do Spotify -->
+    <div class="spotify-player">
+        <iframe style="border-radius:12px" 
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator&theme=0" 
+                width="50%" height="152" frameborder="0" allowfullscreen="" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/thestrokes/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/thestrokes"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/thestrokes/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    <script>
+        function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    }
+    
+    </script>
+
+</body>
+</html>

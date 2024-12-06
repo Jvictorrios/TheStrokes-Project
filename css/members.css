@@ -1,0 +1,86 @@
+* {
+        font-family: "Jersey 10", sans-serif; /* Aplique a fonte aqui */
+        font-weight: 400;
+        font-style: normal;
+
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 15px; /* Tamanho de fonte ajustado */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Aumentar o padding para melhor espaçamento */
+    background-color: #1a1a1a;
+}
+
+.navbar a {
+    color: #d3d3d3;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 25px; /* Ajustar o tamanho da fonte para melhor legibilidade */
+   
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajustar alinhamento vertical */
+    padding: 50px;
+}
+
+.text-content {
+    max-width: 50%; /* Manter a largura máxima para o texto */
+}
+
+.text-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px; /* Reduzir o tamanho do título para melhor legibilidade */
+    margin: 0 0 20px 0;
+}
+
+.text-content p {
+    font-size: 16px; /* Ajustar para um tamanho mais acessível */
+    line-height: 1.6; /* Ajustar o espaçamento entre linhas */
+}
+
+.image-content img {
+    max-width: 100%; /* Manter a responsividade da imagem */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer i {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+

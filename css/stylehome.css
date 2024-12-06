@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:wght@400;700&display=swap');
+
+.jaro-uniquifier{
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px; /* Espaçamento entre o título e os links */
+}
+
+nav a {
+    color: white; /* Cor dos links */
+    font-size: 1.5em; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 15px; /* Espaçamento entre os links */
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+    padding: 10px; /* Adiciona espaço ao redor dos links */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+nav a:hover {
+    color: #d3d3d3; /* Cor ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo ao passar o mouse */
+}
+
+body {
+    
+    .music-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    
+    .music-icon:hover {
+        color: #d3d3d3;
+    }
+
+}
+
+/* CSS para o player do Spotify */
+.spotify-player {
+    position: fixed;
+    bottom: 5px;
+    right: 472px;
+    width: 30%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+/* CSS para o GIF */
+.loading-gif {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.8;
+    transition: transform 0.3s;
+}
+
+.loading-gif:hover {
+    transform: scale(1.1);
+}
+
+/* Aplicando a fonte Jersey 10 ao corpo */
+body {
+    font-family: 'Jersey 10', sans-serif;
+}
+
+/* Estilo para o GIF no canto superior esquerdo */
+.top-left-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 70px; /* Ajuste o tamanho do GIF */
+    height: auto;
+    z-index: 1001;
+}
+
+nav {
+    margin-top: 50px; /* Ajuste o espaço abaixo do ícone */
+}
+
+
+

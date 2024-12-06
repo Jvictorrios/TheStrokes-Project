@@ -1,0 +1,69 @@
+*{
+    font-family: "Jersey 10", sans-serif; /* Aplique a fonte aqui */
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #d3d3d3;
+    font-size: 15px; /* Tamanho de fonte ajustado */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Aumentar o padding para melhor espaçamento */
+    background-color: #1a1a1a;
+}
+
+.navbar a {
+    color: #d3d3d3;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 25px; /* Ajustar o tamanho da fonte para melhor legibilidade */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajustar alinhamento vertical */
+    padding: 50px;
+}
+
+.text-content {
+    max-width: 50%; /* Manter a largura máxima para o texto */
+}
+
+.text-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px; /* Tamanho do título */
+    margin: 0 0 20px 0;
+}
+
+.text-content p {
+    font-size: 16px; /* Ajustar para um tamanho mais acessível */
+    line-height: 1.7; /* Ajustar o espaçamento entre linhas */
+}
+
+.image-content {
+    max-width: 40%; /* Ajustar a largura máxima da imagem */
+}
+
+.image-content img {
+    max-width: 100%; /* Manter a responsividade da imagem */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #222; /* Adicionando um fundo para o rodapé */
+}
+
+.footer i {
+    color: #ffffff;
+    margin: 0 10px;
+}

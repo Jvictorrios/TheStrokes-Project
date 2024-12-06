@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* Cor do texto */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0; /* Ajuste de padding */
+    background-color: #1a1a1a; /* Cor de fundo da navbar */
+}
+
+.navbar a {
+    color: #d3d3d3; /* Cor dos links */
+    text-decoration: none; /* Remover sublinhado */
+    margin: 0 15px; /* Espaçamento entre links */
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+.navbar a:hover, .navbar a.active {
+    text-decoration: underline; /* Sublinhado ao passar o mouse ou se ativo */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    justify-content: center; /* Centralizar itens */
+    padding: 20px; /* Padding da galeria */
+}
+
+.gallery img {
+    margin: 15px; /* Margem em torno das imagens */
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Cobrir espaço sem distorção */
+}
+
+.footer {
+    display: flex;
+    justify-content: center; /* Centralizar itens do footer */
+    align-items: center; /* Alinhar verticalmente */
+    padding: 20px 0; /* Padding do footer */
+    background-color: #1a1a1a; /* Cor de fundo do footer */
+}
+
+.footer .social-icons {
+    margin-right: 20px; /* Margem à direita dos ícones sociais */
+}
+
+.footer .social-icons a {
+    color: #ffffff; /* Cor dos ícones sociais */
+    margin: 0 10px; /* Margem entre os ícones */
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+.footer .pagination {
+    display: flex; /* Flex para alinhamento */
+}
+
+

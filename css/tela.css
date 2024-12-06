@@ -1,0 +1,49 @@
+        /* Estilo adicional para o botão */
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #1C1C1C;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .theme-toggle:hover {
+            background-color: white;
+            color: black;
+        }
+    
+        /* Tema Escuro (Padrão) */
+.dark-mode {
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode nav a:hover {
+    color: #d3d3d3;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Tema Claro */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode nav a {
+    color: black;
+}
+
+.light-mode nav a:hover {
+    color: #1C1C1C;
+    background-color: rgba(0, 0, 0, 0.1);
+}

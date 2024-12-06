@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Strokes</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/tela.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- Pré-conexão e importação da nova fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"/>
+    <style>
+        /* Estilo para o player do Spotify */
+        .spotify-player {
+            margin-top: 20px; /* Espaçamento acima do player */
+            text-align: center; /* Centraliza o player */
+        }
+
+        /* Aplicando a fonte Jersey 10 ao corpo */
+        body {
+            font-family: 'Jersey 10', sans-serif; /* Usar a nova fonte */
+            background-color: #1C1C1C; /* Cor de fundo */
+            color: white; /* Cor do texto */
+        }
+
+        /* Estilo adicional para a navbar e conteúdo */
+        .navbar {
+            background-color: #333; /* Cor de fundo da navbar */
+            padding: 10px; /* Espaçamento da navbar */
+            text-align: center; /* Centraliza o texto da navbar */
+        }
+
+        .navbar a {
+            color: white; /* Cor dos links da navbar */
+            text-decoration: none; /* Remove sublinhado */
+            margin: 0 15px; /* Espaçamento entre os links */
+            transition: color 0.3s; /* Transição suave */
+        }
+
+        .navbar a:hover {
+            color: #d3d3d3; /* Cor ao passar o mouse */
+        }
+
+        .footer {
+            text-align: center; /* Centraliza o conteúdo do rodapé */
+            margin-top: 20px; /* Espaçamento acima do rodapé */
+        }
+
+        .social-icons a {
+            color: white; /* Cor dos ícones sociais */
+            margin: 0 10px; /* Espaçamento entre os ícones */
+        }
+
+        .social-icons a:hover {
+            color: #d3d3d3; /* Cor ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a class="active" href="about.html">Sobre</a>
+        <a href="members.html">Membros da Banda</a>
+        <a href="musical.html">Estilo Musical</a>
+        <a href="galeria.html">Galeria</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="text-content">
+                <h1>The Strokes</h1>
+                <p>
+                    The Strokes é uma banda de rock americana formada em Nova York em 1998. Composta por Julian Casablancas (vocal), Nick Valensi (guitarra), Albert Hammond Jr. (guitarra), Nikolai Fraiture (baixo) e Fabrizio Moretti (bateria), a banda é amplamente reconhecida como um dos principais grupos do movimento de rock revival dos anos 2000.
+                </p>
+                <p>
+                    A música dos Strokes é conhecida por seu som cru e energético, mesclando elementos de garage rock e post-punk. Seu álbum de estreia, "Is This It", lançado em 2001, recebeu aclamação da crítica e é frequentemente mencionado como um dos melhores álbuns da década, solidificando a posição da banda na cena musical.
+                </p>
+            </div>
+            <div class="image-content">
+                <img alt="The Strokes performing on stage" src="https://i.pinimg.com/1200x/a3/57/d5/a357d548845d0bffaa670007c142bb68.jpg" />
+            </div>
+        </div>
+
+        <!-- Embed do Spotify -->
+        <div class="spotify-player">
+            <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO04caZO?utm_source=generator&theme=0" 
+                    width="100%" height="152" frameborder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
+        </div>
+
+        <div class="footer">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/thestrokes/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/thestrokes"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/thestrokes/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+    <script>
+        function toggleTheme() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+    }
+    
+    </script>
+
+</body>
+</html>
+
