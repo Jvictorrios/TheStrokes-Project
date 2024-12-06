@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #d3d3d3;
+    background-color: #1a1a1a;
     font-size: 15px; /* Tamanho de fonte ajustado */
 }
 
@@ -67,3 +68,24 @@ body {
     color: #ffffff;
     margin: 0 10px;
 }
+
+    /* Estilo para o player do Spotify */
+    .spotify-player {
+        margin-top: 20px; /* Espaçamento acima do player */
+        text-align: center; /* Centraliza o player */
+    }
+    
+    p {
+        font-size: 1.1em; /* Tamanho da fonte dos parágrafos */
+        line-height: 1.6; /* Altura da linha para legibilidade */
+        margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+    }
+
+    
+
+    /* Nova classe para Jersey 10 */
+    .jersey-10-regular {
+        font-family: "Jersey 10", sans-serif; /* Aplicando a fonte Jersey 10 */
+        font-weight: 400;
+        font-style: normal;
+    }

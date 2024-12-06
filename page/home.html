@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
 
+
 </head>
-<body class="dark-mode" >
+<body class="dark-mode"
+
     <!-- Adicionando o GIF no canto superior esquerdo -->
     <img class="top-left-icon" src="https://i.pinimg.com/originals/91/68/63/916863c919165c049a254acdf2e4753e.gif" alt="Music GIF">
 
@@ -44,15 +46,69 @@
 
     <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
 
-<script>
-    function toggleTheme() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
-    body.classList.toggle('light-mode');
-}
+    <!-- Popup de Bem-vindo -->
+    <div class="welcome-popup" id="welcomePopup">
+        <h2>Bem-vindo ao site dos Strokes!</h2>
+        <button class="close-btn" onclick="closePopup()">Fechar</button>
+    </div>
 
-</script>
+    <script>
+        // Função para alternar tema
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        }
+
+        // Função para fechar o pop-up
+        function closePopup() {
+            document.getElementById("welcomePopup").style.display = "none";
+            localStorage.setItem('welcomeShown', 'true'); // Marca o pop-up como exibido
+        }
+
+        // Mostrar o pop-up apenas se for a primeira vez
+        window.onload = function() {
+            if (!localStorage.getItem('welcomeShown')) {
+                document.getElementById("welcomePopup").style.display = "block";
+            }
+        }
+    </script>
+
+<style>
+      /* Estilo do Popup */
+      .welcome-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 1001;
+        text-align: center;
+    }
+
+    .welcome-popup h2 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .close-btn {
+        background-color: #ff4b5c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .close-btn:hover {
+        background-color: #ff1f2a;
+    }
+</style>
 
 </body>
 </html>
-

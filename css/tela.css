@@ -1,24 +1,24 @@
-        /* Estilo adicional para o botão */
-        .theme-toggle {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            background-color: #1C1C1C;
-            color: white;
-            border: 2px solid white;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
+/* Estilo adicional para o botão */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #1C1C1C;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        .theme-toggle:hover {
-            background-color: white;
-            color: black;
-        }
-    
-        /* Tema Escuro (Padrão) */
+.theme-toggle:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Tema Escuro (Padrão) */
 .dark-mode {
     background-color: #1C1C1C;
     color: white;
@@ -46,4 +46,31 @@
 .light-mode nav a:hover {
     color: #1C1C1C;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Garantindo boa visibilidade para o texto e o fundo no modo claro */
+.light-mode .theme-toggle {
+    background-color: #3498db; /* Cor de fundo do botão em modo claro */
+    color: white; /* Texto do botão em modo claro */
+    border: 2px solid #3498db; /* Cor da borda do botão */
+}
+
+.light-mode .theme-toggle:hover {
+    background-color: white;
+    color: #3498db; /* Texto em azul no hover do modo claro */
+}
+
+/* Navegação */
+nav a {
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
