@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/galeria.css"> <!-- Vincular o CSS aqui -->
+    <script src="/javascript/modal.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -47,30 +48,7 @@
         <div id="caption"></div>
     </div>
 
-    <script>
-        // Obtendo elementos
-        var modal = document.getElementById("imgModal");
-        var modalImg = document.getElementById("imgModalContent");
-        var captionText = document.getElementById("caption");
-        var closeBtn = document.getElementById("closeBtn");
 
-        // Selecionando todas as imagens com a classe "thumbnail"
-        var images = document.querySelectorAll(".thumbnail");
-
-        // Adicionando um evento de clique para cada imagem
-        images.forEach(function(img) {
-            img.onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            };
-        });
-
-        // Quando o usuário clica no botão de fechar, fecha o modal
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-    </script>
 
 </body>
 </html>

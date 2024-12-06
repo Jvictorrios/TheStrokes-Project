@@ -120,5 +120,36 @@ nav {
 }
 
 
+     /* Estilo do Popup */
+     .welcome-popup {
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 1001;
+        text-align: center;
+    }
 
+    .welcome-popup h2 {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .close-btn {
+        background-color: #ff4b5c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1em;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .close-btn:hover {
+        background-color: #9c3339;
+    }
   
